@@ -610,19 +610,33 @@ Cette section vous permettra de pratiquer la création et la suppression d'index
 
 3- Dans `gestion_stock.fournisseurs`, créez un index sur la colonne `nom_fournisseur`.
 
+``     CREATE UNIQUE INDEX `index_nom` ON `fournisseurs` (`nom_fournisseur`);     ``
+
 4- Dans `crm_clients.clients`, créez un index sur la colonne `email`.
+
+``     CREATE UNIQUE INDEX `index_nom` ON `clients` (`email`);     ``
 
 5- Dans `forum_discussion.utilisateurs`, créez un index sur la colonne `pseudo`.
 
+``     CREATE UNIQUE INDEX `index_nom` ON `utilisateurs` (`pseudo`);     ``
+
 6- Dans `reseau_social.profils`, créez un index sur la colonne `nom_utilisateur`.
+
+``     CREATE UNIQUE INDEX `index_nom` ON `profils` (`nom_utilisateur`);     ``
 
 7- Dans `systeme_reservation.reservations`, créez un index sur la colonne `date_reservation`.
 
 8- Dans `catalogue_produits.categories`, créez un index sur la colonne `nom_categorie`.
 
+``     CREATE UNIQUE INDEX `index_nom` ON `categories` (`nom_categorie`);     ``
+
 9- Dans `suivi_projets.projets`, créez un index sur la colonne `statut`.
 
+``     CREATE UNIQUE INDEX `index_nom` ON `projets` (`statut`);     ``
+
 10- Dans `portefeuille_actions.actions`, créez un index sur la colonne `symbole`.
+
+``     CREATE UNIQUE INDEX `index_nom` ON `actions` (`symbole`);     ``
 
 ### Exercice 5.2: Suppression d'Index
 
@@ -632,20 +646,40 @@ Cette section vous permettra de pratiquer la création et la suppression d'index
 
 1- Supprimez l'index sur `nom_produit` de `projet_ecommerce.produits`.
 
+``     DROP INDEX index_nom ON  produits;     ``
+
 2 Supprimez l'index sur `date_publication` de `blog_personnel.articles`.
+
+``     DROP INDEX index_nom ON  articles;     ``
 
 3- Supprimez l'index sur `nom_fournisseur` de `gestion_stock.fournisseurs`.
 
+``     DROP INDEX index_nom ON  fournisseurs;     ``
+
 4- Supprimez l'index sur `email` de `crm_clients.clients`.
+
+``     DROP INDEX index_nom ON  clients;     ``
 
 5- Supprimez l'index sur `pseudo` de `forum_discussion.utilisateurs`.
 
+``     DROP INDEX index_nom ON  utilisateurs;     ``
+
 6- Supprimez l'index sur `nom_utilisateur` de `reseau_social.profils`.
+
+``     DROP INDEX index_nom ON  profils;     ``
 
 7- Supprimez l'index sur `date_reservation` de `systeme_reservation.reservations`.
 
+/
+
 8- Supprimez l'index sur `nom_categorie` de `catalogue_produits.categories`.
+
+``     DROP INDEX index_nom ON  categories;     ``
 
 9- Supprimez l'index sur `statut` de `suivi_projets.projets`.
 
+``     DROP INDEX index_nom ON  projets;     ``
+
 10- Supprimez l'index sur `symbole` de `portefeuille_actions.actions`.
+
+``     DROP INDEX index_nom ON  actions;     ``
