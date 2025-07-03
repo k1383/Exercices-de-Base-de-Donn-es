@@ -16,19 +16,40 @@ La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer de
 
 1- Sélectionnez toutes les données de la table `produits` dans la base de données `projet_ecommerce`.
 
+``     SELECT * FROM `produits`;     ``
+
 2- Sélectionnez le `titre` et l'`auteur` de tous les `articles` dans `blog_personnel`.
+
+``     SELECT titre, auteur FROM `articles`;     ``
 
 3- Sélectionnez toutes les données de la table `fournisseurs` dans `gestion_stock`.
 
+``     SELECT * FROM `fournisseurs`;     ``
+
 4- Sélectionnez le `nom` et le `prenom` de tous les `clients` dans `crm_clients`.
+
+``     SELECT nom, prenom FROM `clients`;     ``
+
 5- Sélectionnez toutes les données de la table `utilisateurs` dans `forum_discussion`.
+
+``     SELECT * FROM `utilisateurs`;     ``
 
 6- Sélectionnez le `nom_utilisateur` et la `date_creation` de tous les `profils` dans `reseau_social`.
 
+``     SELECT nom_utilisateur, date_creation FROM profils;     ``
+
 7- Sélectionnez toutes les données de la table `reservations` dans `systeme_reservation`.
+
+/
 
 8- Sélectionnez le `nom_categorie` de toutes les `categories` dans `catalogue_produits`.
 
+``     SELECT nom_categorie FROM categories;     ``
+
 9- Sélectionnez le `nom_projet` et le `statut` de tous les `projets` dans `suivi_projets`.
 
+``     SELECT nom_projet, statut FROM projets;     ``
+
 10- Sélectionnez le `symbole` et le `prix_actuel` de toutes les `actions` dans `portefeuille_actions`.
+
+``     SELECT symbole, prix_actuel FROM actions;     ``
