@@ -1,0 +1,34 @@
+# Exercices de Base de Données - DML (Data Manipulation Language)
+
+Ce module d'exercices est dédié à la maîtrise du Langage de Manipulation de Données (DML) en SQL. Le DML vous permet d'interagir avec les données stockées dans votre base de données : les lire, les ajouter, les modifier et les supprimer. Chaque section contient de multiples variations d'exercices pour vous permettre de pratiquer chaque concept au moins 10 fois, renforçant ainsi votre compréhension et votre aisance.
+
+**Prérequis:** Pour réaliser ces exercices, vous devez avoir créé les bases de données et les tables mentionnées dans les exercices DDL. Il est également recommandé d'insérer un jeu de données conséquent dans ces tables pour avoir de quoi manipuler.
+
+## Section 1: Sélection de Données (SELECT)
+
+La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer des informations depuis une ou plusieurs tables. Cette section couvre les bases de la sélection, le filtrage avec `WHERE`, le tri avec `ORDER BY` et la limitation des résultats avec `LIMIT`.
+
+### Exercice 1.1: Sélection Simple (Toutes Colonnes et Colonnes Spécifiques)
+
+**Objectif:** Récupérer toutes les colonnes ou des colonnes spécifiques de différentes tables.
+
+**Instructions:**
+
+1- Sélectionnez toutes les données de la table `produits` dans la base de données `projet_ecommerce`.
+
+2- Sélectionnez le `titre` et l'`auteur` de tous les `articles` dans `blog_personnel`.
+
+3- Sélectionnez toutes les données de la table `fournisseurs` dans `gestion_stock`.
+
+4- Sélectionnez le `nom` et le `prenom` de tous les `clients` dans `crm_clients`.
+5- Sélectionnez toutes les données de la table `utilisateurs` dans `forum_discussion`.
+
+6- Sélectionnez le `nom_utilisateur` et la `date_creation` de tous les `profils` dans `reseau_social`.
+
+7- Sélectionnez toutes les données de la table `reservations` dans `systeme_reservation`.
+
+8- Sélectionnez le `nom_categorie` de toutes les `categories` dans `catalogue_produits`.
+
+9- Sélectionnez le `nom_projet` et le `statut` de tous les `projets` dans `suivi_projets`.
+
+10- Sélectionnez le `symbole` et le `prix_actuel` de toutes les `actions` dans `portefeuille_actions`.
