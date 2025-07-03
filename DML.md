@@ -191,3 +191,39 @@ La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer de
 10- Sélectionnez les 5 actions les plus chères dans `portefeuille_actions.actions`.
 
 ``     SELECT nom_entreprise, prix_actuel FROM `actions` ORDER BY prix_actuel DESC LIMIT 5;      ``
+
+## Section 2: Insertion de Données (INSERT)
+
+La commande `INSERT` permet d'ajouter de nouvelles lignes (enregistrements) dans une table. Il est crucial de s'assurer que les données insérées respectent les contraintes définies sur la table.
+
+### Exercice 2.1: Insertion de Nouvelles Données
+
+**Objectif:** Insérer de nouveaux enregistrements dans différentes tables.
+
+**Instructions:**
+
+1- Insérez un nouveau produit dans `projet_ecommerce.produits` (nom: 'Clavier Mécanique', prix: 89.99, stock: 15).
+
+``     INSERT INTO produits (nom_produit, prix, stock) VALUES ('Clavier Mécanique', 89.99, 15);     ``
+
+2- Insérez un nouvel article dans `blog_personnel.articles` (titre: 'Apprendre le DML', contenu: '...', auteur: 'Jean', date_publication: '2025-06-29').
+
+``     INSERT INTO articles (titre, contenu, auteur, date_publication) VALUES ('Apprendre le DML', '...', 'Jean', '2025-06-29');     ``
+
+3- Insérez un nouveau fournisseur dans `gestion_stock.fournisseurs` (nom: 'Global Supplies', adresse: '123 Rue de la Logistique').
+
+``     INSERT INTO fournisseurs (nom_fournisseur, adresse) VALUES ( 'Global Supplies', '123 Rue de la Logistique');     ``
+
+4- Insérez un nouveau client dans `crm_clients.clients` (nom: 'Bernard', prenom: 'Sophie', email: 'sophie.bernard@example.com', date_inscription: '2025-06-28').
+
+5- Insérez un nouvel utilisateur dans `forum_discussion.utilisateurs` (pseudo: 'ForumUser', email: 'forum.user@example.com').
+
+6- Insérez un nouveau profil dans `reseau_social.profils` (nom_utilisateur: 'Voyageur', bio: 'Passionné de voyages.').
+
+7- Insérez une nouvelle réservation dans `systeme_reservation.reservations` (nom_client: 'Famille Dubois', date_reservation: '2025-08-10', nombre_personnes: 4).
+
+8- Insérez une nouvelle catégorie dans `catalogue_produits.categories` (nom_categorie: 'Vêtements').
+
+9- Insérez un nouveau projet dans `suivi_projets.projets` (nom_projet: 'Refonte Site Web', date_debut: '2025-07-01', statut: 'À faire').
+
+10- Insérez une nouvelle action dans `portefeuille_actions.actions` (symbole: 'AMZN', nom_entreprise: '[Amazon.com](http://amazon.com/) Inc.', prix_actuel: 180.50).
