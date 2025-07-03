@@ -145,3 +145,49 @@ La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer de
 10- Sélectionnez les actions dont le `symbole` est 'GOOG', 'MSFT' ou 'AAPL' dans `portefeuille_actions.actions`.
 
 ``     SELECT symbole FROM actions WHERE symbole IN ('GOOD', 'MSFT', 'AAPL');     ``
+
+### Exercice 1.4: Tri des Résultats (ORDER BY) et Limitation (LIMIT)
+
+**Objectif:** Trier les résultats de vos requêtes en ordre croissant ou décroissant sur une ou plusieurs colonnes, et limiter le nombre de lignes retournées.
+
+**Instructions:**
+
+1- Sélectionnez tous les produits et triez-les par `prix` par ordre croissant dans `projet_ecommerce.produits`.
+
+``     SELECT prix FROM `produits` ORDER BY prix ASC;     ``
+
+2- Sélectionnez les 5 articles les plus récents dans `blog_personnel.articles` (triez par `date_publication` décroissant et limitez).
+
+``     SELECT titre, date_publication FROM `articles` ORDER BY date_publication DESC LIMIT 5;     ``
+
+3- Sélectionnez les fournisseurs par `nom_fournisseur` par ordre alphabétique décroissant dans `gestion_stock.fournisseurs`.
+
+``     SELECT nom_fournisseur FROM `fournisseurs` ORDER BY nom_fournisseur DESC;     ``
+
+4- Sélectionnez les 10 premiers clients inscrits dans `crm_clients.clients` (triez par `date_inscription` croissant et limitez).
+
+``     SELECT nom, prenom, date_inscription FROM `clients` ORDER BY date_inscription DESC;     ``
+
+5- Sélectionnez les utilisateurs par `date_inscription` par ordre décroissant, puis par `pseudo` par ordre croissant dans `forum_discussion.utilisateurs`.
+
+``     SELECT pseudo, date_inscription FROM `utilisateurs`ORDER BY date_inscription ASC, pseudo DESC;     ``
+
+6- Sélectionnez les 3 profils les plus anciens dans `reseau_social.profils`.
+
+``     SELECT nom_utilisateur, date_creation FROM `profils` ORDER BY date_creation ASC LIMIT 3;     ``
+
+7- Sélectionnez les réservations par `date_reservation` par ordre croissant, puis par `nombre_personnes` par ordre décroissant dans `systeme_reservation.reservations`.
+
+/
+
+8- Sélectionnez les catégories par `nom_categorie` par ordre alphabétique croissant dans `catalogue_produits.categories`.
+
+``     SELECT nom_categorie FROM `categories` ORDER BY nom_categorie ASC;     ``
+
+9- Sélectionnez les 7 projets dont le `statut` est 'Terminé', triés par `date_fin_prevue` décroissant dans `suivi_projets.projets`.
+
+``     SELECT nom_projet, statut FROM `projets` WHERE statut = 'Terminé' ORDER BY date_fin_prevue ASC LIMIT 7;     ``
+
+10- Sélectionnez les 5 actions les plus chères dans `portefeuille_actions.actions`.
+
+``     SELECT nom_entreprise, prix_actuel FROM `actions` ORDER BY prix_actuel DESC LIMIT 5;      ``
