@@ -53,3 +53,29 @@ La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer de
 10- Sélectionnez le `symbole` et le `prix_actuel` de toutes les `actions` dans `portefeuille_actions`.
 
 ``     SELECT symbole, prix_actuel FROM actions;     ``
+
+### Exercice 1.2: Filtrage avec WHERE (Opérateurs de Comparaison et Logiques)
+
+**Objectif:** Utiliser la clause `WHERE` avec des opérateurs de comparaison (`=`, `>`, `<`, `>=`, `<=`, `!=` ou `<>`) et des opérateurs logiques (`AND`, `OR`, `NOT`) pour filtrer les résultats.
+
+**Instructions:**
+
+1- Sélectionnez les produits dont le `prix` est supérieur à 50.00 dans `projet_ecommerce.produits`.
+
+2- Sélectionnez les articles publiés après le '2024-01-01' dans `blog_personnel.articles`.
+
+3- Sélectionnez les fournisseurs dont l'`adresse` contient 'Paris' dans `gestion_stock.fournisseurs`.
+
+4- Sélectionnez les clients dont le `nom` est 'Dupont' ET le `prenom` est 'Alice' dans `crm_clients.clients`.
+
+5- Sélectionnez les utilisateurs inscrits avant le '2023-06-30' OU dont le `pseudo` est 'Admin' dans `forum_discussion.utilisateurs`.
+
+6- Sélectionnez les profils dont la `bio` n'est PAS NULL dans `reseau_social.profils`.
+
+7- Sélectionnez les réservations pour '2025-07-01' avec plus de 2 `nombre_personnes` dans `systeme_reservation.reservations`.
+
+8- Sélectionnez les catégories dont le `nom_categorie` est 'Électronique' ou 'Informatique' dans `catalogue_produits.categories`.
+
+9- Sélectionnez les projets dont le `statut` est 'En cours' ET la `date_fin_prevue` est avant '2025-12-31' dans `suivi_projets.projets`.
+
+10- Sélectionnez les actions dont le `prix_actuel` est inférieur à 100.00 ET le `volume_echange` est supérieur à 100000 dans `portefeuille_actions.actions`.
