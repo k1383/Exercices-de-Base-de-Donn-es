@@ -108,20 +108,40 @@ La commande `SELECT` est la plus utilisée en SQL. Elle permet de récupérer de
 
 1- Sélectionnez les produits dont le `id_produit` est 1, 3 ou 5 dans `projet_ecommerce.produits`.
 
+``     SELECT nom_produit FROM produits WHERE id_produits IN ('1', '3', '5');     ``
+
 2- Sélectionnez les articles dont le `titre` commence par 'SQL' dans `blog_personnel.articles`.
+
+``     SELECT titre FROM articles WHERE titre LIKE 'SQL%';     ``
 
 3- Sélectionnez les fournisseurs dont le `nom_fournisseur` contient 'Tech' dans `gestion_stock.fournisseurs`.
 
+``     SELECT nom_fournisseur FROM fournisseurs WHERE nom_fournisseur LIKE '%Tech%';      ``
+
 4- Sélectionnez les clients dont la `date_inscription` est entre '2023-01-01' et '2023-12-31' dans `crm_clients.clients`.
+
+``     SELECT nom, prenom, date_inscription FROM clients WHERE date_inscription BETWEEN  '2023-01-01' AND '2023-12-31';      ``
 
 5- Sélectionnez les utilisateurs dont le `pseudo` se termine par 'er' dans `forum_discussion.utilisateurs`.
 
+``     SELECT pseudo FROM utilisateurs WHERE pseudo LIKE '%er';      ``
+
 6- Sélectionnez les profils dont le `nom_utilisateur` contient 'john' ou 'jane' dans `reseau_social.profils`.
+
+``     SELECT nom_utilisateur FROM profils WHERE nom_utilisateur LIKE '%john%' OR '%jane%';     ``
 
 7- Sélectionnez les réservations dont le `nombre_personnes` est entre 3 et 5 (inclus) dans `systeme_reservation.reservations`.
 
+/
+
 8- Sélectionnez les catégories dont le `nom_categorie` est 'Livres', 'Musique' ou 'Films' dans `catalogue_produits.categories`.
+
+``     SELECT nom_categorie FROM categories WHERE nom_categorie IN ('Livres', 'Musique', 'Films');     ``
 
 9- Sélectionnez les projets dont le `nom_projet` contient 'Phase 1' dans `suivi_projets.projets`.
 
+``     SELECT nom_projet FROM projets WHERE nom_projet LIKE '%Phase 1%';     ``
+
 10- Sélectionnez les actions dont le `symbole` est 'GOOG', 'MSFT' ou 'AAPL' dans `portefeuille_actions.actions`.
+
+``     SELECT symbole FROM actions WHERE symbole IN ('GOOD', 'MSFT', 'AAPL');     ``
