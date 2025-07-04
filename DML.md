@@ -216,14 +216,58 @@ La commande `INSERT` permet d'ajouter de nouvelles lignes (enregistrements) dans
 
 4- Insérez un nouveau client dans `crm_clients.clients` (nom: 'Bernard', prenom: 'Sophie', email: 'sophie.bernard@example.com', date_inscription: '2025-06-28').
 
+``     INSERT INTO clients (nom, prenom, email, date_inscription) VALUES ('Bernard', 'Sophie', 'sophie.bernard@example.com', '2025-06-28');     ``
+
 5- Insérez un nouvel utilisateur dans `forum_discussion.utilisateurs` (pseudo: 'ForumUser', email: 'forum.user@example.com').
+
+``     INSERT INTO utilisateurs (pseudo, email) VALUES ('ForumUser', 'forum.user@example.com');     ``
 
 6- Insérez un nouveau profil dans `reseau_social.profils` (nom_utilisateur: 'Voyageur', bio: 'Passionné de voyages.').
 
+``     INSERT INTO profils (nom_utilisateur, bio) VALUES ('Voyageur', 'Passionné de voyages.');     ``
+
 7- Insérez une nouvelle réservation dans `systeme_reservation.reservations` (nom_client: 'Famille Dubois', date_reservation: '2025-08-10', nombre_personnes: 4).
+
+/
 
 8- Insérez une nouvelle catégorie dans `catalogue_produits.categories` (nom_categorie: 'Vêtements').
 
+``     INSERT INTO categories (nom_categorie) VALUES ('Vêtements');     ``
+
 9- Insérez un nouveau projet dans `suivi_projets.projets` (nom_projet: 'Refonte Site Web', date_debut: '2025-07-01', statut: 'À faire').
 
+``     INSERT INTO projets (nom_projet, date_debut, statut) VALUES ('Refonte Site Web', '2025-07-01', 'À faire');     ``
+
 10- Insérez une nouvelle action dans `portefeuille_actions.actions` (symbole: 'AMZN', nom_entreprise: '[Amazon.com](http://amazon.com/) Inc.', prix_actuel: 180.50).
+
+``     INSERT INTO actions (symbole, nom_entreprise, prix_actuel) VALUES ('AMZN', 'Amazon.comInc', 180.50);     ``
+
+## Section 3: Modification de Données (UPDATE)
+
+La commande `UPDATE` permet de modifier les valeurs des colonnes pour des enregistrements existants. La clause `WHERE` est essentielle pour cibler les enregistrements à modifier et éviter les mises à jour massives non intentionnelles.
+
+### Exercice 3.1: Mise à Jour de Données
+
+**Objectif:** Modifier des enregistrements spécifiques dans différentes tables.
+
+**Instructions:**
+
+1- Mettez à jour le `prix` du produit 'Clavier Mécanique' à 95.00 dans `projet_ecommerce.produits`.
+
+2- Changez l'`auteur` de l'article 'Apprendre le DML' à 'Marie' dans `blog_personnel.articles`.
+
+3- Mettez à jour l'`adresse` du fournisseur 'Global Supplies' à '456 Avenue Industrielle' dans `gestion_stock.fournisseurs`.
+
+4- Changez l'`email` du client 'Sophie Bernard' à 's.bernard@newmail.com' dans `crm_clients.clients`.
+
+5- Mettez à jour le `pseudo` de l'utilisateur 'ForumUser' à 'NewForumUser' dans `forum_discussion.utilisateurs`.
+
+6- Ajoutez une `bio` au profil 'Voyageur': 'Passionné de voyages et de photographie.' dans `reseau_social.profils`.
+
+7- Mettez à jour le `nombre_personnes` de la réservation de 'Famille Dubois' à 5 dans `systeme_reservation.reservations`.
+
+8 Renommez la catégorie 'Vêtements' en 'Mode et Accessoires' dans `catalogue_produits.categories`.
+
+9- Changez le `statut` du projet 'Refonte Site Web' à 'En cours' dans `suivi_projets.projets`.
+
+10- Mettez à jour le `prix_actuel` de l'action 'AMZN' à 182.75 et son `volume_echange` à 150000 dans `portefeuille_actions.actions`.
