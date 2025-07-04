@@ -20,20 +20,39 @@ Les fonctions d'agrégation permettent de réaliser des calculs sur des ensemble
 
 1 Comptez le nombre total de produits dans `projet_ecommerce.produits`.
 
+``     SELECT COUNT(id_produits) FROM produits;     ``  
+
 2- Calculez le prix moyen de tous les produits dans `projet_ecommerce.produits`.
+
+``     SELECT AVG(prix) FROM produits;     ``
 
 3- Trouvez le prix maximum d'un produit dans `projet_ecommerce.produits`.
 
+``     SELECT Max(prix) FROM produits;     ``
+
 4- Trouvez le prix minimum d'un produit dans `projet_ecommerce.produits`.
 
+``     SELECT Min(prix) FROM produits;     ``
 5- Calculez la somme totale du stock de tous les produits dans `projet_ecommerce.produits`.
+
+``     SELECT SUM(stock) FROM produits;      ``
 
 6- Comptez le nombre total d'articles dans `blog_personnel.articles`.
 
+``     SELECT COUNT(id_articles) FROM articles;    ``  
+
 7- Trouvez la date de publication la plus récente dans `blog_personnel.articles`.
+
+``     SELECT MAX(date_publication) FROM articles;     `` 
 
 8- Trouvez la date de publication la plus ancienne dans `blog_personnel.articles`.
 
+``     SELECT MIN(date_publication) FROM articles;     ``
+
 9- Comptez le nombre total de clients dans `crm_clients.clients`.
 
+``     SELECT COUNT(id_client) FROM clients;     ``  
+
 10- Trouvez la date d'inscription la plus récente dans `crm_clients.clients`.
+
+``     SELECT SUM(id_client) FROM clients;     ``
