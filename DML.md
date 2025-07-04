@@ -290,4 +290,55 @@ La commande `UPDATE` permet de modifier les valeurs des colonnes pour des enregi
 
 10- Mettez à jour le `prix_actuel` de l'action 'AMZN' à 182.75 et son `volume_echange` à 150000 dans `portefeuille_actions.actions`.
 
-``     UPDATE actions SET prix_actuel = 182.75 AND volume_echange = 150000 WHERE id_action = 11;     ``
+``     UPDATE actions SET prix_actuel = 182.75, volume_echange = 1500000 WHERE id_action = 11;     ``
+
+
+## Section 4: Suppression de Données (DELETE)
+
+La commande `DELETE` permet de supprimer des lignes (enregistrements) d'une table. Comme pour `UPDATE`, la clause `WHERE` est vitale pour éviter de supprimer toutes les données de la table par erreur.
+
+### Exercice 4.1: Suppression de Données
+
+**Objectif:** Supprimer des enregistrements spécifiques de différentes tables.
+
+**Instructions:**
+
+1- Supprimez le produit 'Clavier Mécanique' de `projet_ecommerce.produits`.
+
+``     DELETE FROM produits WHERE nom_produit = 'Clavier Mécanique';     `` 
+
+2- Supprimez l'article dont le `titre` est 'Apprendre le DML' de `blog_personnel.articles`.
+
+``     DELETE FROM articles WHERE titre =  'Apprendre le DML';     ``
+
+3- Supprimez le fournisseur 'Global Supplies' de `gestion_stock.fournisseurs`.
+
+``     DELETE FROM fournisseurs WHERE nom_fournisseur =  'Global Supplies';     ``
+
+4 Supprimez le client dont l'`email` est 's.bernard@newmail.com' de `crm_clients.clients`.
+
+``     DELETE FROM clients WHERE email =  's.bernard@newmail.com';     ``
+
+5- Supprimez l'utilisateur dont le `pseudo` est 'NewForumUser' de `forum_discussion.utilisateurs`.
+
+``     DELETE FROM utilisateurs WHERE pseudo = 'NewForumUser';     ``
+
+6- Supprimez le profil 'Voyageur' de `reseau_social.profils`.
+
+``     DELETE FROM profils WHERE nom_utilisateur =  'Voyageur';     ``
+
+7- Supprimez la réservation de 'Famille Dubois' de `systeme_reservation.reservations`.
+
+/
+
+8- Supprimez la catégorie 'Mode et Accessoires' de `catalogue_produits.categories`.
+
+``     DELETE FROM categories WHERE nom_categorie = 'Mode et Accessoires';     ``
+
+9- Supprimez le projet 'Refonte Site Web' de `suivi_projets.projets`.
+
+``     DELETE FROM projets WHERE nom_projet = 'Refonte Site Web';     ``
+
+10- Supprimez l'action 'AMZN' de `portefeuille_actions.actions`.
+
+``     DELETE FROM actions WHERE symbole = 'AMZN';     ``
