@@ -254,20 +254,40 @@ La commande `UPDATE` permet de modifier les valeurs des colonnes pour des enregi
 
 1- Mettez à jour le `prix` du produit 'Clavier Mécanique' à 95.00 dans `projet_ecommerce.produits`.
 
+``     UPDATE produits SET prix = 95.00 WHERE id_produits = 11;     ``
+
 2- Changez l'`auteur` de l'article 'Apprendre le DML' à 'Marie' dans `blog_personnel.articles`.
+
+``     UPDATE articles SET auteur = 'Marie' WHERE id_articles = 31;     ``
 
 3- Mettez à jour l'`adresse` du fournisseur 'Global Supplies' à '456 Avenue Industrielle' dans `gestion_stock.fournisseurs`.
 
+``     UPDATE fournisseurs SET adresse = '456 Avenue Industrielle' WHERE id_fournisseur = 11;     ``
+
 4- Changez l'`email` du client 'Sophie Bernard' à 's.bernard@newmail.com' dans `crm_clients.clients`.
+
+``     UPDATE clients SET email = 's.bernard@newmail.com' WHERE id_client = 3;     ``
 
 5- Mettez à jour le `pseudo` de l'utilisateur 'ForumUser' à 'NewForumUser' dans `forum_discussion.utilisateurs`.
 
+``     UPDATE utilisateurs SET pseudo = 'NewForumUser' WHERE id_utilisateur = 8;     `` 
+
 6- Ajoutez une `bio` au profil 'Voyageur': 'Passionné de voyages et de photographie.' dans `reseau_social.profils`.
+
+``     UPDATE profils SET bio = 'Passionné de voyages et de photographie.' WHERE id_profil = 8;     ``
 
 7- Mettez à jour le `nombre_personnes` de la réservation de 'Famille Dubois' à 5 dans `systeme_reservation.reservations`.
 
+/
+
 8 Renommez la catégorie 'Vêtements' en 'Mode et Accessoires' dans `catalogue_produits.categories`.
+
+``     UPDATE categories SET nom_categorie = 'Mode et Accessoires' WHERE id_categorie = 8;     ``
 
 9- Changez le `statut` du projet 'Refonte Site Web' à 'En cours' dans `suivi_projets.projets`.
 
+``     UPDATE projets SET statut = 'En cours' WHERE id_projet = 8;     ``
+
 10- Mettez à jour le `prix_actuel` de l'action 'AMZN' à 182.75 et son `volume_echange` à 150000 dans `portefeuille_actions.actions`.
+
+``     UPDATE actions SET prix_actuel = 182.75 AND volume_echange = 150000 WHERE id_action = 11;     ``
